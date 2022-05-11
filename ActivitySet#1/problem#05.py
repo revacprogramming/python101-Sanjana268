@@ -1,6 +1,6 @@
 # Functions
 def computepay(hours,rate):
-    print("In computepay",hours,rate)
+    #print("In computepay",hours,rate)
     if hours>40:
     #print("overtime")
         reg= hours*rate
