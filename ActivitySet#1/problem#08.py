@@ -1,16 +1,21 @@
 # Files
 
 #filename = "dataset/mbox-short.txt"
-fname = raw_input("Enter file name: ")
-fh = open(fname)
-count = 0
-total = 0
-for line in fh:
-    if not line.startswith("X-DSPAM-Confidence:") : continue
-    t=line.find("0")
-    number= float(line[t:])
-    count = count + 1
-    total = total + number
+def find_avg(fc,ft):
+    fname = input("Enter file name: ")
+    fh = open(fname)
+    fc = 0
+    ft = 0
+    for line in fh:
+        if not line.startswith("X-DSPAM-Confidence:") : continue
+        x=line.find("0")
+        y= float(line[x:])
+        fc = fc + 1
+        ft = ft + y
 
-average = total/count
-print("Average spam confidence:",average)
+    average = ft/fc
+    print("Average spam confidence:",average)
+
+count=0
+total=0
+average=find_avg(count,total)
