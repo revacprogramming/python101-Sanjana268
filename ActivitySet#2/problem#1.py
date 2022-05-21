@@ -1,12 +1,23 @@
+#def add(e, f):
+    #return e + f  # ...
 
 
-def add(a, b):
-    return  # ...
+#def main():
+    #a = input  # ...
+    #b = input  # ...
+
+    #c = add(a, b)
+    #print  # ...
 
 
-def main():
-    a = input  # ...
-    b = input  # ...
+def add(ie,id):
+    return ie+id
+    
+a = input("Enter the number:")  
+b = input("Enter the number:")
+ia=int(a)
+ib=int(b)
+ic=add(ia,ib)
 
-    c = add(a, b)
-    print  # ...
+
+print ("Sum is:",ic) 
