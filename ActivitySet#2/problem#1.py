@@ -21,3 +21,10 @@ ic=add(ia,ib)
 
 
 print ("Sum is:",ic) 
+
+or
+
+def increment(number,by):
+    return number+by
+
+print(increment(5,3))
