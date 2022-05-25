@@ -9,18 +9,15 @@
     #c = add(a, b)
     #print  # ...
 
-
-def add(ie,id):
-    return ie+id
-    
-a = input("Enter the number:")  
-b = input("Enter the number:")
-ia=int(a)
-ib=int(b)
-ic=add(ia,ib)
+def add(a,b):
+    return a+b
 
 
-print ("Sum is:",ic) 
+a=3
+b=5
+c=add(3,5)
+
+print("The sum is:",c)
 
 or
 

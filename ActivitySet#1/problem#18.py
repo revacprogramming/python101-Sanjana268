@@ -29,9 +29,9 @@ for line in fh:
     else :
         cur.execute('UPDATE Counts SET count=count+1 WHERE org = ?',
             (org, ))
-    conn.commit()
+    conn.connect()
 
-sqlstr = 'SELECT org, count FROM Counts ORDER BY count DESC LIMIT 10'
+sqlstr = 'SELECT org, count FROM Counts ORDER BY count DESC LIMIT 10"
 
 print
 print("Counts:")
