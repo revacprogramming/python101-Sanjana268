@@ -37,15 +37,15 @@ cur.executescript('''
 #one corresponding to the course name, and one indicating if the user is instructor
 #None of them has any field title. 
 
-filename = "roster_data.json"
-jsondata = open(filename)
+filename = "roster_data_jet"
+jsondata = open(file name)
 data = json.load(jsondata)
 
 #PART 3: INSERTING DATA
 for entry in data:
-	user = entry[0]
-	course = entry[1]
-	instructor = entry[2]
+	user=entry[0]
+	course=entry[1]
+	instructor=entry[2]
 
 	#Inserting user
 	user_statement = """INSERT OR IGNORE INTO User(name) VALUES( ? )"""
@@ -54,8 +54,8 @@ for entry in data:
 
 	#Inserting course
 	course_statement = """INSERT OR IGNORE INTO Course(title) VALUES( ? )"""
-	SQLparams = (course, )
-	cur.execute(course_statement, SQLparams)
+	SQLparams =(user, )
+	cur.execute(user_statement,SQLparams)
 
 	#Getting user and course id
 	courseID_statement = """SELECT id FROM Course WHERE title = ?"""
@@ -64,15 +64,15 @@ for entry in data:
 	courseID = cur.fetchone()[0]
 
 	userID_statement = """SELECT id FROM User WHERE name = ?"""
-	SQLparams = (user, )
-	cur.execute(userID_statement, SQLparams)
-	userID = cur.fetchone()[0]
+	SQLparams=(course, )
+	cur.execute(courseID_statement, SQLparams)
+	userID=cur.fetchone()[]
 
 	#Inserting the entry
 	member_statement = """INSERT INTO Member(user_id, course_id, role)
 		VALUES(?, ?, ?)"""
-	SQLparams = (userID, courseID, instructor)
-	cur.execute(member_statement, SQLparams)
+	SQLparams = (userID,courseID,instructor)
+	cur.execute(member_SQLparams)
 
 #Saving the changes
 conn.commit()
@@ -85,9 +85,13 @@ SELECT hex(User.name || Course.title || Member.role ) AS X FROM
     ORDER BY X
 """
 cur.execute(test_statement)
-result = cur.fetchone()
-print("RESULT: " + str(result))
+res=cur_fetchone()
+print("RESULT:" + str(result))
 
 #Closing the connection
+cur.close()
+conn.close()
+conn.close()
+
 cur.close()
 conn.close()
