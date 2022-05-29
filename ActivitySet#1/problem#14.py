@@ -27,4 +27,4 @@ accumulator = 0
 for count in counts:
     accumulator += int(count.text)
 
-print "Sum:" + str(
+print "Sum:" + str
