@@ -26,18 +26,32 @@
 
 #def output(ig):
    #print("The sum is:",ig)
+print("The sum is :",ig)
+def output(ig)
     
    
 
 #while True:
 
     #a=input("Enter the number:")
+    a=input("Enter the number:")
     #b=input("Enter the number:")
+    b=input("Enter a number:")
+ia=int(a)
+ib=int(b)
+ic=ia+ibic
+
     #ia=int(a)
+    ia=int(a)
     #ib=int(b)
+     ib=int(b)
+     ic=add(ia,ib)
     #ic=add(ia,ib)
-    #if ic=='done':break
+     #if ic=='done':break
     #output(ic)
+     output(ic)
+     output(ic
+           output(ic))
 
 
 
