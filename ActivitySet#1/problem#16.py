@@ -25,6 +25,7 @@ for tItem in lPeople:
     add_people(sName, iAge)
 
 c.execute("SELECT hex(name || age) AS X FROM Ages ORDER BY X")
+
 print(c.fetchall())
 
 conn.commit()

@@ -55,7 +55,7 @@ ic=ia+ibic
 
 
 
-    def input_two_numbers():
+def input_two_numbers():
   x = input('input? ')
   y=x.split()
   g=y[0]
