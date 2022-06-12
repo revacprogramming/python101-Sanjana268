@@ -15,3 +15,8 @@ for key,value in  mails.items():
         maxi_value = value
         maxi_key = key
 print(maxi_key, maxi_value)
+pri
+print(max_value,)
+print(max_key,max_value)
+maxi_key=none 
+maxi_key=none
