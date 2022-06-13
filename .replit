@@ -1,2 +1,2 @@
 language = "python3"
-run = "Pythonfilename.py"
+run = "Python filename.py"
